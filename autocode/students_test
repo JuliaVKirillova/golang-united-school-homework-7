@@ -56,14 +56,14 @@ func TestPeople_Less(t *testing.T) {
 		"different people": {
 			people: People{
 				{
-					firstName: "John",
-					lastName:  "Black",
+					firstName: "Henry",
+					lastName:  "White",
 					birthDay:  time.Date(1990, 1, 2, 0, 0, 0, 0, time.UTC),
 				},
 				{
 					firstName: "Mary",
-					lastName:  "Jane",
-					birthDay:  time.Date(1993, 1, 2, 0, 0, 0, 0, time.UTC),
+					lastName:  "Tate",
+					birthDay:  time.Date(1985, 1, 2, 0, 0, 0, 0, time.UTC),
 				},
 			},
 			expected: true,
@@ -71,13 +71,13 @@ func TestPeople_Less(t *testing.T) {
 		"equal birthday": {
 			people: People{
 				{
-					firstName: "John",
-					lastName:  "Black",
+					firstName: "Henry",
+					lastName:  "White",
 					birthDay:  time.Date(1990, 1, 2, 0, 0, 0, 0, time.UTC),
 				},
 				{
 					firstName: "Mary",
-					lastName:  "Jane",
+					lastName:  "Tate",
 					birthDay:  time.Date(1990, 1, 2, 0, 0, 0, 0, time.UTC),
 				},
 			},
@@ -86,13 +86,13 @@ func TestPeople_Less(t *testing.T) {
 		"equal birthday and firstname": {
 			people: People{
 				{
-					firstName: "Mary",
-					lastName:  "Black",
+					firstName: "Henry",
+					lastName:  "White",
 					birthDay:  time.Date(1990, 1, 2, 0, 0, 0, 0, time.UTC),
 				},
 				{
-					firstName: "Mary",
-					lastName:  "Jane",
+					firstName: "Henry",
+					lastName:  "White",
 					birthDay:  time.Date(1990, 1, 2, 0, 0, 0, 0, time.UTC),
 				},
 			},
